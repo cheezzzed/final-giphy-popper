@@ -50,11 +50,11 @@ body{
 
 @keyframes falling{
 	from{
-		bottom: 100%;
+		transform: translateY(0%);
 	}
 
 	to{
-		bottom: 0%;
+		transform: translateY(100%);
 	}
 }
 

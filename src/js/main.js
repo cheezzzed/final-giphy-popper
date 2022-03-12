@@ -57,12 +57,14 @@ myButton.addEventListener('click', function (event) {
 				createdImg.style.left = Math.random() * 600 + 'px'
 				createdImg.style.top = Math.random() * 0 + 'px'
 				
-				setInterval(function() {
-					let nextDrop = document.querySelector('.new-img:not(.falling)')
-					nextDrop.classList.add('falling')
-				}, 1000);
+				
 				
 			}
+
+			setInterval(function() {
+				let nextDrop = document.querySelector('.new-img:not(.falling)')
+				nextDrop.classList.add('falling')
+			}, 1000);
 
 
 	})
