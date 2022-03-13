@@ -57,7 +57,11 @@ myButton.addEventListener('click', function (event) {
 				createdImg.style.left = Math.random() * 600 + 'px'
 				createdImg.style.top = Math.random() * 0 + 'px'
 				
-				
+				createdImg.addEventListener('click', function (){
+
+					this.classList.remove('falling')
+
+				})
 				
 			}
 
@@ -83,6 +87,12 @@ myButton.addEventListener('click', function (event) {
 			createdImg.style.left = Math.random() * 600 + 'px'
 			createdImg.style.top = Math.random() * 0 + 'px'
 
+			differentImg.addEventListener('click', function (){
+
+				this.classList.remove('falling')
+
+			})
+
 		}
 
 	})
@@ -94,15 +104,10 @@ myButton.addEventListener('click', function (event) {
 		wrongDrop.classList.add('falling')
 	}, 1000); 
 
-	createdImg.addEventListener('click', function (){
-
-		this.classList.remove('new-img')
-
-	})
-
 	
-		
 })
+
+
 
 
 	// search giphy for whatever is typed in
