@@ -61,14 +61,47 @@ myButton.addEventListener('click', function (event) {
 				
 			}
 
-			setInterval(function() {
-				let nextDrop = document.querySelector('.new-img:not(.falling)')
-				nextDrop.classList.add('falling')
-			}, 1000);
+			
+
+			
 
 
 	})
 
+	
+
+	getGif('Core Water', function(gifData){
+
+		for (let i = 0; i< 1; i++) {
+			console.log(getGif[i])
+
+			let differentImg = document.createElement('img')
+			differentImg.setAttribute('src' , gifData[i].images.original.url)
+			differentImg.classList.add('wrong-img')
+			document.body.append(differentImg)
+
+			createdImg.style.left = Math.random() * 600 + 'px'
+			createdImg.style.top = Math.random() * 0 + 'px'
+
+		}
+
+	})
+
+	setInterval(function() {
+		let nextDrop = document.querySelector('.new-img:not(.falling)')
+		let wrongDrop = document.querySelector('.wrong-img:not(.falling)')
+		nextDrop.classList.add('falling')
+		wrongDrop.classList.add('falling')
+	}, 1000); 
+
+	createdImg.addEventListener('click', function (){
+
+		this.classList.remove('new-img')
+
+	})
+
+	
+		
 })
 
 
