@@ -96,8 +96,8 @@ body {
 }
 
 .falling {
-  -webkit-animation: 1s;
-          animation: 1s;
+  -webkit-animation: 7s;
+          animation: 7s;
   -webkit-animation-name: falling;
           animation-name: falling;
 }
@@ -108,8 +108,8 @@ body {
             transform: translateY(0%);
   }
   to {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    -webkit-transform: translateY(2000%);
+            transform: translateY(2000%);
   }
 }
 
@@ -119,8 +119,8 @@ body {
             transform: translateY(0%);
   }
   to {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    -webkit-transform: translateY(2000%);
+            transform: translateY(2000%);
   }
 }
 /* 2. Content ================================= */

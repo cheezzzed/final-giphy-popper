@@ -84,8 +84,8 @@ myButton.addEventListener('click', function (event) {
 			differentImg.classList.add('wrong-img')
 			document.body.append(differentImg)
 
-			createdImg.style.left = Math.random() * 600 + 'px'
-			createdImg.style.top = Math.random() * 0 + 'px'
+			differentImg.style.left = Math.random() * 600 + 'px'
+			differentImg.style.top = Math.random() * 0 + 'px'
 
 			differentImg.addEventListener('click', function (){
 
