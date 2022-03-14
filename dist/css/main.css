@@ -82,6 +82,10 @@ body {
   position: absolute;
 }
 
+.clicked {
+  display: none;
+}
+
 .new-img {
   height: 100px;
   width: 100px;
@@ -100,6 +104,8 @@ body {
           animation: 7s;
   -webkit-animation-name: falling;
           animation-name: falling;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes falling {

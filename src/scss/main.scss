@@ -34,6 +34,9 @@ body{
 	
 }
 
+.clicked{
+	display: none;
+}
 
 .new-img{
 	height: 100px;
@@ -51,6 +54,7 @@ body{
 .falling{
 	animation: 7s;
 	animation-name: falling;
+	animation-iteration-count: infinite;
 }
 
 @keyframes falling{

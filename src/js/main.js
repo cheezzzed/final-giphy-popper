@@ -57,10 +57,13 @@ myButton.addEventListener('click', function (event) {
 				createdImg.style.left = Math.random() * 600 + 'px'
 				createdImg.style.top = Math.random() * 0 + 'px'
 				
-				createdImg.addEventListener('click', function (){
-
-					this.classList.remove('falling')
-
+				createdImg.addEventListener('click', function () {
+					console.log('clicked right image')
+					this.classList.add('clicked') // if you click one, make it disappear!
+					setTimeout(function () {
+						// and then reappear later so it can be reused
+						createdImg.classList.remove('clicked')
+					}, 7000)
 				})
 				
 			}
@@ -87,10 +90,13 @@ myButton.addEventListener('click', function (event) {
 			differentImg.style.left = Math.random() * 600 + 'px'
 			differentImg.style.top = Math.random() * 0 + 'px'
 
-			differentImg.addEventListener('click', function (){
-
-				this.classList.remove('falling')
-
+			differentImg.addEventListener('click', function () {
+				console.log('clicked wrong image')
+				this.classList.add('clicked') // if you click one, make it disappear!
+				setTimeout(function () {
+					// and then reappear later so it can be reused
+					differentImg.classList.remove('clicked')
+				}, 7000)
 			})
 
 		}
